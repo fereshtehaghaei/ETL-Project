@@ -1,7 +1,6 @@
 # [ETL Project: Trending YouTube Videos (2017-2018)](https://github.com/fereshtehaghaei/ETL-Project)
 
 
-
 **Dataset Description:** The data used in this project was taken from a publicly available dataset on Kaggle that was gathered using the YouTube API. The data used here was a collection of the top trending videos from YouTube for the years 2017-2018. YouTube determines the top trending videos of the year based on a combination of factors including views, likes, and comments (note: top trending videos are different than the most viewed videos of the year). For this project, we chose to compare the United States dataset of top trending videos to the Russia dataset. Both datasets included over 40,000 videos from the years 2017-2018 and various metrics about the videos, including the channel title, video title, video category, amount of likes/dislikes, comment count, views, and more. (Note: not every data point in this set is unique, since an individual video can be trending for multiple days. Some of the most popular videos will be in these datasets multiple times, because they were trending for multiple days).Source: https://www.kaggle.com/datasnaek/youtube-new
 
 ---
@@ -110,8 +109,11 @@ The files 'jes_queries.sql','jm_sql_work.sql', and 'jm_queries.sql' include all 
 
 ![](Images/sql5.png)
 
+
+
 ## Results
-=======
+
+
 
 ## **US Stats** 
 
@@ -206,17 +208,22 @@ The files 'jes_queries.sql','jm_sql_work.sql', and 'jm_queries.sql' include all 
 ### **Most popular channel**: (as measured by the number of times the channel occured in dataset)
 
 * Анатолий Шарий (Anatoly Shariy): **196** trending videos (category: comedy)
+
 * Эхо Москвы (Echo of Moscow): **184** videos (news & politics)
+
 * Модные Практики с Паукште Ириной Михайловной (Fashion Practices with Paukshte Irina Mikhailovna): **168** videos (how-to & style)
+
 * Wylsacom: **167** videos (science & technology)
+
 * Kamikadzedead: **158** videos (comedy)
 
+  
+
 ## **Observations**
-=======
 * The US and Russia share the same most popular video of the year, the BTS music video for their song ‘Fake Love’.
 * Many videos that were trending were popular in both countries (Youtube spotlight, Kylie Jenner, BTS, Logan Paul).
 * US media is pretty popular in Russia, but most US videos are from US creators/content channels.
 * The most viewed channels per category are not necessarily the most popular channels. When comparing the most popular categories as measured by views to the most popular channels measured by how many times they ended up on the trending list, you can see that these do not always line up. For example, in Russia, the comedy channel video with the most views is from Jimmy Fallon, but the comedy channel with the greatest amount of trending videos is Anatoly Shariy. This means that Jimmy Fallon had one incredibly popular video, but that Anatoly Shariy had many popular videos. 
-* The most disliked videos still have alot of engagement, suggesting that views/comments might not be a valuable metric of likeability, and that ‘controversies’ can be very popular (for example, the most disliked and most commented on video in the US was an apology video from Logan Paul Vlogs).
+* The most disliked videos still have a lot of engagement, suggesting that views/comments might not be a valuable metric of likeability, and that ‘controversies’ can be very popular (for example, the most disliked and most commented on video in the US was an apology video from Logan Paul Vlogs).
 * A trending video may receive a mass amount of views, but a large amount of views doesn’t necessarily mean a large amount of likes. For example, in the US, “Childish Gambino - This is America” received the most views at 225,211,923, but was liked only 2.2% of the time. The video with the highest percentage of likes per view was “Bruno Mars - Finesse”, receiving 29% of likes in a video viewed 548,621 times. In Russia, the most watched video “BTS - Fake Love” received 62,796,390 views with just 7.1% liking the video. However, the video with the highest percentage of likes per view was “Mora Saiyaan” with 94% of viewers liking the video.
 * There are a few limitations to comparing the amount of views a video receives to the amount of likes and/or dislikes it receives. You do not need to have an account with YouTube to view videos, but you do need an account in order to like, dislike, or comment on a video. This limits the amount of viewers that could potentially interact with the video.
